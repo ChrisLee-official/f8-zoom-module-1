@@ -1,0 +1,68 @@
+@use "../base/mixin";
+@use "../base/variables" as var;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.nav__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &--img {
+    width: 31px;
+    height: 31px;
+  }
+  &--content {
+    @include mixin.flexCenter-col;
+    font-family: var.$font-heading;
+    p {
+      font-weight: 800;
+      font-size: 2.4rem;
+    }
+    p + p {
+      font-weight: 400;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.nav__list {
+  display: flex;
+  gap: 4rem;
+}
+
+.nav__items {
+  :hover {
+    color: var.$color-orange;
+    font-weight: 600;
+
+    .icon-transform {
+      transform: rotate(180deg);
+    }
+  }
+
+  a {
+    font-family: var.$font-main;
+    text-decoration: none;
+    color: var.$color-dark;
+    line-height: 2.8rem;
+  }
+}
+.nav__call {
+  a {
+    text-decoration: none;
+    color: var.$color-dark;
+    line-height: 2.8rem;
+  }
+
+  .highlight {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+  }
+}

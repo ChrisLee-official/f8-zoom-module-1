@@ -5,12 +5,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <%- include ("./partials/head.ejs") %>
 </head>
 
 <body>
+    <!-- Start Page 1 -->
+    <section class="wrapper__header">
+        <div class="container container--background">
+            <%- include("./partials/header.ejs") %>
+                <section class="content">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="content__desc">
+                                <h1 class="desc__heading">Find Your Dream
+                                    Home Right Away.
+                                </h1>
+                                <p>The experience and commitment to rewarding landoawmers with their dream architectural
+                                    developments has made them eam trust within and beyond borders.
+                                </p>
+                                <button class="desc__btn">
+                                    FIND PROPERTY
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="content__img">
+                                <img src="/assets/img/home-img-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-    <h1>Home</h1>
-    <h2></h2>
+                <section class="choose">
+                    <div class="row">
+                        <div class="col">
+                            <div class="choose__options">
+                                <div class="options__list">
+                                    <h4 class="options__heading">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M20.0347 10.0348C20.0347 11.9349 19.3751 13.681 18.2724 15.0565H18.277C18.277 15.0565 15.4846 18.7933 13.3214 21.4393C12.6312 22.2834 11.3688 22.2831 10.6791 21.4386C8.5227 18.7985 5.73385 15.0646 5.73385 15.0646L5.72735 15.0565C4.62466 13.681 3.96509 11.9349 3.96509 10.0348C3.96509 5.5973 7.56238 2 11.9999 2C16.4374 2 20.0347 5.5973 20.0347 10.0348ZM15 10C15 11.6569 13.6569 13 12 13C10.3431 13 9 11.6569 9 10C9 8.34315 10.3431 7 12 7C13.6569 7 15 8.34315 15 10Z"
+                                                fill="#0E1412" />
+                                        </svg>
+                                        Location
+                                    </h4>
+                                    <a href="#">
+                                        Select Location
+                                        <i class="icon-transform fa-solid fa-angle-down"></i>
+                                    </a>
+                                </div>
+                                <div class="options__list">
+                                    <h4 class="options__heading">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.99311 9.10625C2.36096 9.67518 2 10.4857 2 11.3361V19C2 20.6569 3.34315 22 5 22H19C20.6569 22 22 20.6569 22 19V11.3361C22 10.4857 21.639 9.67518 21.0069 9.10625L14.0069 2.80625C12.866 1.77943 11.134 1.77943 9.9931 2.80625L2.99311 9.10625ZM11 13C9.89543 13 9 13.8955 9 15V19C9 19.5523 9.44772 20 10 20H14C14.5523 20 15 19.5523 15 19V15C15 13.8955 14.1046 13 13 13H11Z"
+                                                fill="#0E1412" />
+                                        </svg>
+                                        Property Type
+                                    </h4>
+                                    <a href="#">
+                                        Choose Property Type
+                                        <i class="icon-transform fa-solid fa-angle-down"></i>
+                                    </a>
+                                </div>
+                                <div class="options__list">
+                                    <h4 class="options__heading">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5 2C3.34315 2 2 3.34315 2 5V19C2 20.6569 3.34315 22 5 22H19C20.6569 22 22 20.6569 22 19V9C22 7.69378 21.1652 6.58254 20 6.17071V5C20 3.34315 18.6569 2 17 2H5ZM5 4C4.44772 4 4 4.44772 4 5C4 5.55228 4.44772 6 5 6H18V5C18 4.44772 17.5523 4 17 4H5ZM17 12C15.8954 12 15 12.8954 15 14C15 15.1046 15.8954 16 17 16H19C19.5523 16 20 15.5523 20 15V13C20 12.4477 19.5523 12 19 12H17Z"
+                                                fill="#0E1412" />
+                                        </svg>
+                                        Price Range
+                                    </h4>
+                                    <a href="#">
+                                        Choose Price
+                                        <i class="icon-transform fa-solid fa-angle-down"></i>
+                                    </a>
+                                </div>
+                                <button class="options__btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        </div>
+    </section>
+
+    <!-- Start Page 2 -->
+    <section class="wrapper__aboutus">
+        <div class="container aboutus--container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="aboutus__wrapper">
+                        <div class="aboutus__content">
+                            <p class="aboutus__sub">About Us</p>
+                            <h1 class="aboutus__heading">We Specialize In Quality
+                                Home Renovations</h1>
+                            <p>There are many wariations of passages of Lorem lpsun available, but the majority
+                                have
+                                sufered
+                                alteration in some form, by injected humour. or randomised words wihich don't
+                                look even
+                                sligitty believable. If you are going to Se a pessage of Lorem lpsum.</p>
+                        </div>
+
+                        <div class="aboutus__checklist">
+                            <div class="aboutus__checking">
+                                <div class="aboutus__checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <p>Outstanding property</p>
+                            </div>
+                            <div class="aboutus__checking">
+                                <div class="aboutus__checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <p>Professional and exparienced human rnsources</p>
+                            </div>
+                            <div class="aboutus__checking">
+                                <div class="aboutus__checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <p>Provide the best services for users</p>
+                            </div>
+                            <div class="aboutus__checking">
+                                <div class="aboutus__checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <p>Modern dty locations and exceptional lifestyle</p>
+                            </div>
+                        </div>
+
+                        <button class="aboutus__btn">Read More</button>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="aboutus__img">
+                        <img src="/assets/img/home-img-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+    </section>
+
     <script type="module" src="./main.js"></script>
 </body>
 

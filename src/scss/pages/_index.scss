@@ -1,0 +1,146 @@
+@use "../base/mixin";
+@use "../base/variables" as var;
+
+.container--background {
+  background-color: white;
+}
+
+.content {
+  margin-top: 7rem;
+
+  &__desc {
+    .desc__heading {
+      @include mixin.h1;
+    }
+
+    p {
+      @include mixin.p1;
+      margin-top: 2rem;
+    }
+
+    .desc__btn {
+      @include mixin.b1;
+      margin-top: 4rem;
+      padding: 1.5rem 3rem;
+      background-color: var.$color-orange;
+      color: var.$color-white;
+      border-radius: 6px;
+
+      i {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+.content__img {
+  display: flex;
+
+  img {
+    margin-left: auto;
+    border-radius: 10px;
+  }
+}
+
+.choose {
+  margin-top: 6rem;
+  border-radius: 8px;
+  box-shadow: 0px 20px 70px 0px rgba(14, 20, 18, 0.07);
+
+  &__options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 97px;
+  }
+}
+
+.options__list {
+  .options__heading {
+    @include mixin.h4;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  a {
+    @include mixin.p3;
+    margin-left: 3.5rem;
+    text-decoration: none;
+    color: var.$color-grey;
+
+    i {
+      margin-left: 1rem;
+    }
+  }
+}
+.options__btn {
+  padding: 1.5rem 2rem;
+  background-color: var.$color-orange;
+  border-radius: 6px;
+  color: var.$color-white;
+}
+
+.wrapper__aboutus {
+  width: 100%;
+  margin-top: 131px;
+  background-color: var.$color-dark;
+  color: var.$color-white;
+
+  .aboutus--container {
+    padding: 100px 0;
+  }
+}
+
+.aboutus__content {
+  .aboutus__sub {
+    @include mixin.subHeading;
+    color: var.$color-orange;
+  }
+
+  .aboutus__heading {
+    @include mixin.h2;
+    margin-top: 0.6rem;
+  }
+
+  p {
+    @include mixin.p1;
+    margin-top: 1.8rem;
+  }
+}
+
+.aboutus__checklist {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .aboutus__checking {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .aboutus__checkmark {
+    @include mixin.flexCenter;
+    width: 40px;
+    height: 40px;
+    background-color: var.$color-orange;
+    border-radius: 50%;
+  }
+}
+
+.aboutus__btn {
+  margin-top: 51px;
+  padding: 1.5rem 3.5rem;
+  background-color: var.$color-orange;
+  border-radius: 5px;
+}
+
+.aboutus__img {
+  display: flex;
+  img {
+    margin-left: auto;
+  }
+}

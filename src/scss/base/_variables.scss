@@ -1,3 +1,21 @@
-$color-basic: #ffffff;
-$color-primary: #fd6038;
-$color-secondary: #fed464;
+// Gris system
+$grid-breakpoints: (
+  xxl: 1400px,
+  xl: 1200px,
+  lg: 992px,
+  md: 768px,
+  sm: 576px,
+);
+
+// Color
+$color-dark: #0e1412;
+$color-white: #fff;
+$color-orange: #fd6038;
+$color-yellow: #fed464;
+$color-yellow-light: #f8ebc9;
+$color-green: #017848;
+$color-grey: #586863;
+
+// Font
+$font-heading: "Roboto Slab", serif;
+$font-main: "Manrope", sans-serif;

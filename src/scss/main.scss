@@ -11,6 +11,10 @@
 
 // Pages
 @use "./pages/index";
+@use "./pages/about";
+@use "./pages/blog";
+@use "./pages/contact";
+@use "./pages/practice";
 
 // Components
 @use "./components/button";
